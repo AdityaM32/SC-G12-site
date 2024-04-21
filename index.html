@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Sentiment Classification Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://t3.ftcdn.net/jpg/06/36/89/58/360_F_636895864_VNNRtMdGhefLrUiuU0RSfYx7odu8IgQz.jpg'); /* Replace 'background.jpg' with your image file */
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #fff; /* Text color */
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #007bff;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .links-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .links-list li {
+            margin-bottom: 10px;
+        }
+
+        .links-list li a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .links-list li a:hover {
+            text-decoration: underline;
+        }
+
+        .contributions {
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .contributions h2 {
+            font-size: 24px;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            margin-top: 30px;
+        }
+
+        .contact-info p {
+            font-size: 16px;
+            color: #ddd; /* Text color */
+            margin-bottom: 10px;
+        }
+        .contributors {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; /* Adjust as needed */
+        }
+
+        .contributor-card {
+            display: flex; /* Use flexbox */
+            align-items: center; /* Align items vertically in the center */
+            justify-content: center;
+            width: 45%; /* Adjust as needed */
+            margin-bottom: 20px; /* Adjust as needed */
+            max-width: 100%;
+            border: 2px solid #ccc; /* Border around the entire contributor card */
+            border-radius: 10px; /* Rounded corners for the contributor card */
+            padding: 1px; /* Add padding to the contributor card */
+        }
+
+        .contributor-card img {
+            width: 100px; /* Adjust width as needed */
+            height: 100px; /* Adjust height as needed */
+            object-fit: cover; /* Maintain aspect ratio */
+            height: auto;
+            /* padding: 10px; Adjust as needed */
+            border-radius: 50%; /* This will make the image appear in a circle */
+        }
+
+        .contributor-info {
+            padding: 0 10px; /* Adjust as needed */
+        }
+
+        .contributor-info h3 {
+            margin-top: 0;
+        }
+
+        .contributor-info p {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sentiment Classification Project</h1>
+        <table width="999" align="center" class="menu" style="margin-bottom: 8px;">
+            <tbody>
+                <tr>
+                    <td align="center"><a href="./resources/paper.pdf">Paper</a> | <a href="">Slides</a> | <a href="https://github.com/vl2g/CSTBIR">Code</a> | <a href="https://www.kaggle.com/datasets/abhi8923shriv/sentiment-analysis-dataset">Dataset</a> | <a href="https://github.com/AdityaM32/Sentiment_Classification_G12">Github</a> | <a href="https://www.youtube.com/watch?v=M8JcMv7Rznw">Short Talk</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <h2 class="section-title">Abstract</h2>
+        <p> The age of information is upon us. In the 20th century, We have seen a rapid rise of online users and online activity accompanied with a Boom in the user generated data. One such application is Twitter or now called X which is one of the biggest blogging site across the world. The generation of a large amount of User generated data demands a some sort of moderation on the type of data present on the platform. The use of machine learning algorithm to classify a text based on classes can be used to categorize said data , One such categorization can be done by Sentiment analysis. Sentiment analysis is a process of automatically identifying whether a user-generated text expresses positive, negative or neutral opinion about an entity (i.e. product, people, topic, event etc). The main focus of the project is to create classification models which can separate a text based on three sentiments mainly neutral, positive and negative where positive statement  which have or show favorable opinion towards people and services and is generable favorable. Negative statement refers to the opposite where curse words or a bad or let down emotion is showed. The essence of the neutral emotion is hard to capture but can to summed up to the lack of positive or negative emotion in the text.</p>
+
+
+
+        <h2 class="section-title">Machine Learning Models used:</h2>
+        <ul>
+            <li>Naive Bayes</li>
+            <li>Multinomial Naive Bayes</li>
+            <li>Logistic Regression</li>
+            <li>Decision Tree</li>
+            <li>Random Forest</li>
+            <li>Complement Naive bayes</li>
+            <li>Support Vector Machine (SVM kernel='linear')</li>
+        </ul>
+        <h2 class="section-title">Short talk</h2>
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+
+        <h2 class="section-title">Project Members</h2>
+        <div class="contributors" >
+            
+            <!-- <p>Our sentiment classification project has been contributed by:</p> -->
+            <div class="contributor-card" >
+                <img src="Aditya.png" alt="Contributor 1" border-radius=50%;>
+                <div class="contributor-info">
+                    <h3>Aditya Mundhara</h3>
+                <p>Email: <a href="mailto:b22ai057@iitj.ac.in">b22ai057@iitj.ac.in</a></p>
+                </div>
+            </div>
+            
+            <div class="contributor-card">
+                <img src="Anubhav.jpg" alt="Contributor 2">
+                <div class="contributor-info">
+                <h3>Anubhav Tandon</h3>
+                <p>Email: <a href="mailto:b22cs013@iitj.ac.in">b22cs013@iitj.ac.in</a></p>
+                </div>
+            </div>
+            <div class="contributor-card">
+                <img src="Sidharth.jpg" alt="Contributor 3">
+                <div class="contributor-info">
+                <h3>Sidharth Shanu</h3>
+                <p>Email: <a href="mailto:b22cs049@iitj.ac.in">b22cs049@iitj.ac.in</a></p>
+                </div>
+            </div>
+            <div class="contributor-card">
+                <img src="Sushrut.jpg" alt="Contributor 4">
+                <div class="contributor-info">
+                <h3>Sushrut Barmate</h3>
+                <p>Email: <a href="mailto:b22ai040@iitj.ac.in">b22ai040@iitj.ac.in</a></p>
+                </div>
+            </div>
+            <div class="contributor-card">
+                <img src="Tanmay.jpg" alt="Contributor 5">
+                <div class="contributor-info">
+                <h3>Tanmay Parashar</h3>
+                <p>Email: <a href="mailto:b22cs053@iitj.ac.in">b22cs053@iitj.ac.in</a></p>
+                </div>
+            </div>
+        </div>
+        <h2 class="section-title">Contact</h2>
+        For questions, please raise an issue on <a class="publink" href="https://github.com/AdityaM32/Sentiment_Classification_G12" style="text-decoration: none">GitHub</a>.
+    </div>
+</body>
+<footer>
+    <p>Copyright &copy; IIT Jodhpur</p>
+</footer>  
+
+</html>
